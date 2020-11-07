@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2">
+
+        <Spinner
+            android:id="@+id/batchSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:entries="@array/batch"
+            android:prompt="@string/batch_choose" />
+
+        <Spinner
+            android:id="@+id/sectionSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:entries="@array/section"
+            android:prompt="@string/section_choose" />
+
+    </LinearLayout>
+
+</LinearLayout>

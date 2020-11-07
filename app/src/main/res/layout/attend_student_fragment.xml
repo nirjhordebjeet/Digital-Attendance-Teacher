@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/exploreButton"
+        android:text="Export Sheet"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+
+        android:layout_margin="20dp"
+        />
+    <TextView
+        android:id="@+id/total_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="Today total attend Students : "
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@android:color/black" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/sendBtn" />
+
+
+
+
+</LinearLayout>
